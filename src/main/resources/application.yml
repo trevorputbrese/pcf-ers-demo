@@ -1,14 +1,16 @@
 spring.profiles.active: dev
 
-spring.jpa.hibernate.ddl-auto: update
+spring:
+  jpa:
+    hibernate.ddl-auto: update
+    defer-datasource-initialization: true
+  application:
+    name: attendees
 
 ribbon:
   eureka:
     enabled: false
 
-spring:
-  application:
-    name: attendees
 
 # don't do this in production, we are doing it here so that
 # we can do features of Cloud Foundry without having to explain
