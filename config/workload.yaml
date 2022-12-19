@@ -4,6 +4,8 @@ metadata:
   name: tas-ers-demo
   labels:
     apps.tanzu.vmware.com/workload-type: web
+    app.kubernetes.io/part-of: tas-ers-demo
+
 spec:
   source:
     git:
